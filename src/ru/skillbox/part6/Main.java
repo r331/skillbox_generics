@@ -13,7 +13,7 @@ public class Main {
 
         List<? super Dog> lst = new ArrayList<>();
         List<?> lst2 = new ArrayList<Object>();
-        lst.add(new BulDog());
+        lst.add(new BullDog());
         printList(lst);
         printList2(lst);
         var a = lst.get(0);
@@ -36,7 +36,7 @@ interface Animal {
 interface Good {
     void sayHello();
 }
-class BulDog extends Dog{
+class BullDog extends Dog{
 
 }
 class Dog implements Animal, Good{
